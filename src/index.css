@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Noto Serif Bengali', 'Noto Sans Bengali', serif;
+    background-color: #fdfbf7;
+    color: #1c1917;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .bg-grain-pattern {
+    background-image: radial-gradient(circle at 20% 50%, rgba(245, 158, 11, 0.04) 0%, transparent 50%),
+                       radial-gradient(circle at 80% 80%, rgba(22, 163, 74, 0.04) 0%, transparent 50%),
+                       radial-gradient(circle at 40% 20%, rgba(249, 115, 22, 0.03) 0%, transparent 50%);
+  }
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+  .animate-delay-700 { animation-delay: 700ms; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #faf6ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
+
+/* Hide initial opacity for animated elements */
+.opacity-0-animate {
+  opacity: 0;
+}

@@ -1,0 +1,230 @@
+export interface RiceProduct {
+  id: string;
+  name: string;
+  nameEn: string;
+  description: string;
+  fullDescription: string;
+  image: string;
+  origin: string;
+  badge?: string;
+  cookingUse: string;
+}
+
+export const products: RiceProduct[] = [
+  {
+    id: 'miniket',
+    name: 'প্রিমিয়াম মিনিকেট চাল',
+    nameEn: 'Premium Miniket',
+    description: 'চকচকে, সাদা ও লম্বা দানার প্রিমিয়াম মিনিকেট। ভাত হবে ঝরঝরে ও নরম।',
+    fullDescription: 'দিনাজপুর ও নওগাঁর সেরা মিল থেকে সংগৃহীত প্রিমিয়াম মিনিকেট চাল। চকচকে, সাদা ও লম্বা দানার এই চাল দিয়ে ভাত হয় ঝরঝরে ও নরম। পরিবারের নিত্যদিনের খাবারের জন্য অত্যন্ত জনপ্রিয়। কোনো কৃত্রিম পলিশ ছাড়া সম্পূর্ণ প্রাকৃতিকভাবে সংগ্রহ করা হয়।',
+    image: 'https://images.pexels.com/photos/36346840/pexels-photo-36346840.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'দিনাজপুর',
+    badge: 'জনপ্রিয়',
+    cookingUse: 'নিত্যদিনের ভাত',
+  },
+  {
+    id: 'basmati',
+    name: 'স্পেশাল বাসমতী চাল',
+    nameEn: 'Special Basmati',
+    description: 'লম্বা দানাদার ও রাজকীয় সুবাস। শাহী বিরিয়ানি ও বিশেষ মেহমানদারির জন্য সেরা।',
+    fullDescription: 'চাপাইনবাবগঞ্জের সেরা মিল থেকে সংগৃহীত স্পেশাল বাসমতী চাল। লম্বা দানাদার ও রাজকীয় সুবাসযুক্ত এই চাল দিয়ে তৈরি বিরিয়ানি ও পোলাও হয় অসাধারণ স্বাদের। বিশেষ মেহমানদারি, বিয়ে-শাদি ও উৎসবের জন্য এটি সেরা পছন্দ।',
+    image: 'https://images.pexels.com/photos/7421207/pexels-photo-7421207.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'চাপাইনবাবগঞ্জ',
+    badge: 'প্রিমিয়াম',
+    cookingUse: 'বিরিয়ানি ও পোলাও',
+  },
+  {
+    id: 'nazirshail',
+    name: 'খাঁটি নাজিরশাইল চাল',
+    nameEn: 'Pure Nazirshail',
+    description: 'চিকন ও ঐতিহ্যবাহী সুস্বাদু নাজিরশাইল। স্বাস্থ্যসচেতনদের প্রথম পছন্দ।',
+    fullDescription: 'নওগাঁর উর্বর ভূমি থেকে সংগৃহীত খাঁটি নাজিরশাইল চাল। চিকন ও ঐতিহ্যবাহী সুস্বাদু এই চাল স্বাস্থ্যসচেতনদের প্রথম পছন্দ। ভাত হয় আঠালো ও সুস্বাদু। পুষ্টিগুণ সংরক্ষণে কোনো রাসায়নিক প্রক্রিয়া ব্যবহার করা হয় না।',
+    image: 'https://images.pexels.com/photos/18328392/pexels-photo-18328392.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'নওগাঁ',
+    badge: 'ঐতিহ্যবাহী',
+    cookingUse: 'নিত্যদিনের ভাত',
+  },
+  {
+    id: 'chinigura',
+    name: 'সুগন্ধি চিনিগুঁড়া চাল',
+    nameEn: 'Aromatic Chinigura',
+    description: 'দিনাজপুরের চমৎকার সুবাসযুক্ত চিনিগুঁড়া চাল। পোলাও, বিরিয়ানি ও পায়েসের জন্য।',
+    fullDescription: 'দিনাজপুরের বিখ্যাত সুগন্ধি চিনিগুঁড়া চাল। চমৎকার সুবাস ও মিষ্টি স্বাদের জন্য এই চাল বিখ্যাত। পোলাও, বিরিয়ানি, পায়েস ও বিশেষ মিষ্টি খাবারের জন্য অতুলনীয়। ছোট দানার এই চাল রান্নার পর অসাধারণ সুগন্ধ ছড়ায়।',
+    image: 'https://images.pexels.com/photos/4110255/pexels-photo-4110255.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'দিনাজপুর',
+    badge: 'সুগন্ধি',
+    cookingUse: 'পোলাও ও পায়েস',
+  },
+  {
+    id: 'atash',
+    name: 'বিআর-২৮ (আটাশ) চাল',
+    nameEn: 'BR-28 (Atash)',
+    description: 'মাঝারি দানার পরিষ্কার চাল। হোটেল, মেস ও নিয়মিত পারিবারিক ব্যবহারে জনপ্রিয়।',
+    fullDescription: 'বিআর-২৮ বা আটাশ চাল মাঝারি দানার পরিষ্কার ও মানসম্মত চাল। হোটেল, মেস, ক্যান্টিন ও নিয়মিত পারিবারিক ব্যবহারে অত্যন্ত জনপ্রিয়। সাশ্রয়ী মূল্যে ভালো মানের চালের জন্য এটি দারুণ পছন্দ। ভাত হয় নরম ও পুষ্টিকর।',
+    image: 'https://images.pexels.com/photos/36008677/pexels-photo-36008677.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'নওগাঁ',
+    cookingUse: 'নিত্যদিনের ভাত',
+  },
+  {
+    id: 'paijam',
+    name: 'দেশি পাইজাম চাল',
+    nameEn: 'Desi Paijam',
+    description: 'ঝরঝরে ও সুস্বাদু ঐতিহ্যবাহী দেশি পাইজাম। রান্নার পর আকার চমৎকার বাড়ে।',
+    fullDescription: 'কুষ্টিয়ার সেরা মোকাম থেকে সংগৃহীত দেশি পাইজাম চাল। ঝরঝরে ও সুস্বাদু ঐতিহ্যবাহী এই চাল রান্নার পর আকারে চমৎকার বৃদ্ধি পায়। সাধারণ পরিবারের নিত্যদিনের ভাতের জন্য মোটা দানার এই চাল লাজবাব।',
+    image: 'https://images.pexels.com/photos/8108170/pexels-photo-8108170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'কুষ্টিয়া',
+    cookingUse: 'নিত্যদিনের ভাত',
+  },
+  {
+    id: 'swarna',
+    name: 'স্বর্ণা চাউল',
+    nameEn: 'Swarna',
+    description: 'পুষ্টিকর ও কম মূল্যের সবচেয়ে সাশ্রয়ী পাইকারি চাল। হোটেল ও ক্যান্টিনে সেরা।',
+    fullDescription: 'স্বর্ণা চাউল পুষ্টিকর ও কম মূল্যের সবচেয়ে সাশ্রয়ী পাইকারি চাল। হোটেল, ক্যান্টিন, মেস ও বড় পরিসরের রান্নার জন্য এটি সেরা পছন্দ। মাঝারি দানার এই চাল ভালোভাবে সিদ্ধ হয় ও পরিমাণে বেশি ভাত পাওয়া যায়।',
+    image: 'https://images.pexels.com/photos/10294598/pexels-photo-10294598.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'কুষ্টিয়া',
+    badge: 'সাশ্রয়ী',
+    cookingUse: 'হোটেল ও ক্যান্টিন',
+  },
+  {
+    id: 'haski',
+    name: 'হাসকি চাউল',
+    nameEn: 'Haski',
+    description: 'প্রথাগত ও প্রাকৃতিক স্বাদের আসল হাসকি চাল। নিয়মিত সাধারণ ভাতের চাল।',
+    fullDescription: 'প্রথাগত ও প্রাকৃতিক স্বাদের আসল হাসকি চাল। নিয়মিত সাধারণ ভাতের জন্য এই চাল ব্যবহৃত হয়। মাঝারি মানের ও সাশ্রয়ী মূল্যের এই চাল পরিবারের নিত্যদিনের চাহিদা মেটায়। ভাত হয় সাধারণ ও পুষ্টিকর।',
+    image: 'https://images.pexels.com/photos/36346843/pexels-photo-36346843.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'নওগাঁ',
+    cookingUse: 'নিত্যদিনের ভাত',
+  },
+  {
+    id: 'atop',
+    name: 'সাদা আতপ চাউল',
+    nameEn: 'White Atop',
+    description: 'পিঠা, পায়েস, খিচুড়ি ও বিশেষ অনুষ্ঠানের নিখুঁত ধবধবে সাদা আতপ চাল।',
+    fullDescription: 'ধবধবে সাদা আতপ চাল পিঠা, পায়েস, খিচুড়ি ও বিশেষ অনুষ্ঠানের জন্য নিখুঁত। এই চাল দিয়ে তৈরি পিঠা ও মিষ্টি খাবার অসাধারণ স্বাদের হয়। বিভিন্ন ঐতিহ্যবাহী খাবারের মূল উপাদান হিসেবে এটি অপরিহার্য।',
+    image: 'https://images.pexels.com/photos/7665442/pexels-photo-7665442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    origin: 'নওগাঁ',
+    cookingUse: 'পিঠা ও পায়েস',
+  },
+];
+
+export interface Brand {
+  name: string;
+}
+
+export const brands: Brand[] = [
+  { name: 'এসিআই (ACI)' },
+  { name: 'মোজাম্মেল' },
+  { name: 'দাদা রাইস (আরশাদ আলী)' },
+  { name: 'দেশ এগ্রো' },
+  { name: 'ফ্রেশ' },
+  { name: 'পুষ্টি' },
+  { name: 'বুশরা' },
+  { name: 'জহুরা' },
+  { name: 'সাগর' },
+  { name: 'বিশ্বাস' },
+  { name: 'আপ্যায়ন' },
+  { name: 'স্বপ্ন সুপার' },
+];
+
+export interface Branch {
+  id: string;
+  name: string;
+  address: string;
+  phone: string;
+  phone2?: string;
+  mapUrl: string;
+}
+
+export const branches: Branch[] = [
+  {
+    id: 'main',
+    name: 'প্রধান শাখা',
+    address: 'সমাজকল্যাণ রোড, আমির আলী মার্কেট, দত্তপাড়া, চেরাগআলী, টঙ্গী, গাজীপুর।',
+    phone: '০১৩২০-৩৯৫৪৬২',
+    phone2: '০১৩২০-৩৯৫৪৭১',
+    mapUrl: 'https://maps.app.goo.gl/U2AxnFoTWqhAx5t96',
+  },
+  {
+    id: 'unit-02',
+    name: 'ইউনিট-০২',
+    address: 'হাউজ বিল্ডিং, বনমালা রোড, দত্তপাড়া, টঙ্গী, গাজীপুর।',
+    phone: '০১৩২০-৩৯৫৪৬২',
+    phone2: '০১৭৪২-৮৩১৪৭৬',
+    mapUrl: 'https://maps.app.goo.gl/t8ArgX39R8kmFPC36',
+  },
+];
+
+export const deliveryAreas: string[] = [
+  'চেরাগআলী',
+  'কলেজ গেট',
+  'গাজীপুরা',
+  'বোর্ড বাজার',
+  'বড়বাড়ি',
+  'দত্তপাড়া',
+  'টঙ্গী',
+  'আশেপাশের এলাকা',
+];
+
+export const sourcingRegions: string[] = [
+  'দিনাজপুর',
+  'নওগাঁ',
+  'কুষ্টিয়া',
+  'চাপাইনবাবগঞ্জ',
+];
+
+export const otherRiceTypes: string[] = [
+  'বিআর-২৯',
+  'গুটি স্বর্ণা',
+  'লতা শাইল',
+  'কালিজিরা',
+  'রাজা স্বর্ণা',
+  'দ্বিজ শাইল',
+  'বিআর-১১',
+  'সরসা',
+  'কাঞ্চন',
+  'রত্না',
+  'মালতি',
+  'পারিজাৎ',
+];
+
+export const wholesaleClients: string[] = [
+  'হোটেল ও রেস্তোরাঁ',
+  'ক্যান্টিন ও মেস',
+  'ক্যাটারিং সার্ভিস',
+  'খুচরা মুদি দোকান',
+  'পাইকারি বিক্রেতা',
+  'করপোরেট সাপ্লাই',
+];
+
+export interface WholesaleAdvantage {
+  title: string;
+  description: string;
+}
+
+export const wholesaleAdvantages: WholesaleAdvantage[] = [
+  {
+    title: 'সরাসরি মিল রেট',
+    description: 'মিল ও মোকাম থেকে সরাসরি সংগ্রহের কারণে মধ্যস্বত্বভোগী নেই — পাইকারি ক্রেতা পান সর্বনিম্ন দাম।',
+  },
+  {
+    title: '১০ বস্তায় বিশেষ ছাড়',
+    description: '১০ বস্তা বা তার অধিক অর্ডারে বিশেষ ছাড় ও সম্পূর্ণ ফ্রি ডেলিভারি দেওয়া হয়।',
+  },
+  {
+    title: 'নিজস্ব পরিবহন',
+    description: 'আমাদের নিজস্ব গাড়ি বহর রয়েছে — কোনো গাড়ি ভাড়া বা লেবার চার্জ ছাড়াই দোকানে পৌঁছে দেওয়া হয়।',
+  },
+  {
+    title: 'নিয়মিত সাপ্লাই',
+    description: 'নির্দিষ্ট সময়ে নিয়মিত চাল সরবরাহ নিশ্চিত করা হয় যাতে আপনার ব্যবসায় কোনো ব্যাঘাত না ঘটে।',
+  },
+  {
+    title: 'ডিজিটাল ওজন',
+    description: 'ডিজিটাল স্কেলে নিখুঁত ওজন — প্রতিটি বস্তায় ১০০% সঠিক পরিমাপ নিশ্চিত করা হয়।',
+  },
+  {
+    title: 'বহু ব্র্যান্ডের অপশন',
+    description: 'দেশের শীর্ষ ১২+ ব্র্যান্ডের চাল একই ছাদের নিচে — আপনার পছন্দ অনুযায়ী ব্র্যান্ড বেছে নিন।',
+  },
+];
