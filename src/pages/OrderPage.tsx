@@ -55,6 +55,7 @@ export default function OrderPage() {
       `ঠিকানা: ${customer.address}`,
     ];
     if (customer.notes) lines.push(`মন্তব্য: ${customer.notes}`);
+    lines.push('', '(মেসার্স সোনালী ট্রেডার্স ওয়েবসাইট থেকে প্রেরিত)');
     return encodeURIComponent(lines.join('\n'));
   };
 
