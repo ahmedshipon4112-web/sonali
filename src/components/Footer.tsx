@@ -27,7 +27,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               </div>
             </div>
             <p className="font-bengali text-sm text-stone-400 leading-relaxed">
-              সততা, সঠিক ওজন ও গ্রাহক সন্তুষ্টির অঙ্গীকার নিয়ে টঙ্গী-গাজীপুর অঞ্চলের একটি শীর্ষস্থানীয় চালের আড়ৎ।
+              সততা, সঠিক ওজন ও গ্রাহক সন্তুষ্টির অঙ্গীকার নিয়ে টঙ্গী-গাজীপুর অঞ্চলের একটি শীর্ষস্থানীয় চালের আড়ৎ।
             </p>
           </div>
 
@@ -83,7 +83,9 @@ export default function Footer({ onNavigate }: FooterProps) {
             <h4 className="font-bengali font-semibold text-white mb-4">আমাদের ফলো করুন</h4>
             <div className="flex gap-3 mb-4">
               <a
-                href="#"
+                href="https://www.facebook.com/share/19B9g5cXhD/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-stone-800 flex items-center justify-center text-stone-400 hover:text-primary-400 hover:bg-stone-700 transition-colors"
                 aria-label="Facebook"
               >
