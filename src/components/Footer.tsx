@@ -23,7 +23,11 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-14 h-12 rounded-lg bg-white flex items-center justify-center shadow-md overflow-hidden">
-                <img src="/logo.jpeg" alt="সোনালী ট্রেডার্স লোগো" className="w-full h-full object-cover scale-[1.45]" />
+                <img
+                  src={`${import.meta.env.BASE_URL}image.png`}
+                  alt="সোনালী ট্রেডার্স লোগো"
+                  className="w-full h-full object-contain p-1"
+                />
               </div>
               <div>
                 <h3 className="font-bengali font-bold text-white text-lg">মেসার্স সোনালী ট্রেডার্স</h3>
