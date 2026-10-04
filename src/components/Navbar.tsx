@@ -61,20 +61,20 @@ export default function Navbar({ currentRoute, onNavigate }: NavbarProps) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          {/* Logo */}
-          <button onClick={() => handleNavClick('home')} className="flex items-center gap-2.5 group">
-            <div className="w-14 h-12 rounded-lg bg-white flex items-center justify-center shadow-md overflow-hidden group-hover:scale-105 transition-transform">
+          {/* Logo Section (বড় ও নতুন ডিজাইনে পরিবর্তন করা হয়েছে) */}
+          <button onClick={() => handleNavClick('home')} className="flex items-center gap-3 group">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform shrink-0">
               <img
                 src={`${import.meta.env.BASE_URL}logo.jpeg`}
                 alt="সোনালী ট্রেডার্স লোগো"
-                className="w-full h-full object-contain p-1"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
             <div className="text-left">
-              <h1 className="font-bengali font-bold text-primary-800 text-lg leading-tight">
+              <h1 className="font-bengali font-bold text-primary-800 text-xl leading-tight">
                 মেসার্স সোনালী ট্রেডার্স
               </h1>
-              <p className="font-bengali text-xs text-stone-500">প্রসিদ্ধ চাউলের আড়ৎ</p>
+              <p className="font-bengali text-xs sm:text-sm text-stone-500">প্রসিদ্ধ চাউলের আড়ৎ</p>
             </div>
           </button>
 
