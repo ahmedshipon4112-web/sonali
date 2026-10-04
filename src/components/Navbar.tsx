@@ -65,7 +65,7 @@ export default function Navbar({ currentRoute, onNavigate }: NavbarProps) {
           <button onClick={() => handleNavClick('home')} className="flex items-center gap-2.5 group">
             <div className="w-14 h-12 rounded-lg bg-white flex items-center justify-center shadow-md overflow-hidden group-hover:scale-105 transition-transform">
               <img
-                src={`${import.meta.env.BASE_URL}image.png`}
+                src={`${import.meta.env.BASE_URL}logo.jpeg`}
                 alt="সোনালী ট্রেডার্স লোগো"
                 className="w-full h-full object-contain p-1"
               />
