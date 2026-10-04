@@ -2,11 +2,11 @@ import { Phone, MessageCircle, Facebook, Mail, MapPin, Clock, Store } from 'luci
 import { branches } from '@/data';
 import type { PageRoute } from '@/router';
 
-interface ContactSectionProps {
+interface ContactProps {
   onNavigate: (route: PageRoute) => void;
 }
 
-export default function ContactSection({ onNavigate }: ContactSectionProps) {
+export default function Contact({ onNavigate }: ContactProps) {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-cream-50 to-cream-100">
       <div className="max-w-7xl mx-auto">
@@ -56,11 +56,19 @@ export default function ContactSection({ onNavigate }: ContactSectionProps) {
 
           {/* Quick links */}
           <div className="flex flex-wrap gap-3 mt-6 justify-center lg:justify-start">
-            <a href="https://www.facebook.com/share/19y85MzVms/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-primary-100 hover:text-white font-bengali text-sm transition-colors">
+            <a
+              href="https://www.facebook.com/share/19B9g5cXhD/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-primary-100 hover:text-white font-bengali text-sm transition-colors"
+            >
               <Facebook className="w-4 h-4" /> ফেসবুক পেজ
             </a>
             <span className="text-white/30">|</span>
-            <a href="mailto:sonalitradersrice@gmail.com" className="flex items-center gap-1.5 text-primary-100 hover:text-white font-bengali text-sm transition-colors">
+            <a
+              href="mailto:sonalitradersrice@gmail.com"
+              className="flex items-center gap-1.5 text-primary-100 hover:text-white font-bengali text-sm transition-colors"
+            >
               <Mail className="w-4 h-4" /> sonalitradersrice@gmail.com
             </a>
             <span className="text-white/30">|</span>
@@ -72,47 +80,61 @@ export default function ContactSection({ onNavigate }: ContactSectionProps) {
 
         {/* Branches */}
         <div className="grid md:grid-cols-2 gap-6 mb-10">
-          {branches.map((branch) => (
-            <div
-              key={branch.id}
-              className="bg-white rounded-2xl p-7 shadow-md hover:shadow-xl transition-shadow border border-stone-100"
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center">
-                  <Store className="w-6 h-6 text-primary-600" />
-                </div>
-                <div>
-                  <h3 className="font-bengali font-bold text-lg text-stone-800">{branch.name}</h3>
-                  <p className="font-bengali text-stone-500 text-sm flex items-start gap-1.5 mt-1.5">
-                    <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary-500" />
-                    {branch.address}
-                  </p>
-                </div>
-              </div>
+          {branches.map((branch, index) => {
+            // ইউনিট-০১ এবং ইউনিট-০২ এর জন্য সঠিক গুগল ম্যাপ লিঙ্ক নির্ধারণ
+            const mapLink =
+              index === 0
+                ? 'https://maps.app.goo.gl/qCWHGSC7UuZTHe728?g_st=aw'
+                : 'https://maps.app.goo.gl/2wm3tYqZpmE8n3Yv7';
 
-              <div className="space-y-2 ml-16">
-                <a href={`tel:${branch.phone}`} className="flex items-center gap-2 font-bengali text-stone-700 hover:text-primary-700 transition-colors">
-                  <Phone className="w-4 h-4 text-primary-500" />
-                  {branch.phone} <span className="text-xs text-stone-400">(প্রধান)</span>
-                </a>
-                {branch.phone2 && (
-                  <a href={`tel:${branch.phone2}`} className="flex items-center gap-2 font-bengali text-stone-700 hover:text-primary-700 transition-colors">
-                    <Phone className="w-4 h-4 text-stone-400" />
-                    {branch.phone2}
+            return (
+              <div
+                key={branch.id}
+                className="bg-white rounded-2xl p-7 shadow-md hover:shadow-xl transition-shadow border border-stone-100"
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center">
+                    <Store className="w-6 h-6 text-primary-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-bengali font-bold text-lg text-stone-800">{branch.name}</h3>
+                    <p className="font-bengali text-stone-500 text-sm flex items-start gap-1.5 mt-1.5">
+                      <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary-500" />
+                      {branch.address}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-2 ml-16">
+                  <a
+                    href={`tel:${branch.phone}`}
+                    className="flex items-center gap-2 font-bengali text-stone-700 hover:text-primary-700 transition-colors"
+                  >
+                    <Phone className="w-4 h-4 text-primary-500" />
+                    {branch.phone} <span className="text-xs text-stone-400">(প্রধান)</span>
                   </a>
-                )}
-                <a
-                  href={branch.mapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-secondary-600 hover:text-secondary-700 font-bengali text-sm font-medium mt-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  গুগল ম্যাপে দেখুন
-                </a>
+                  {branch.phone2 && (
+                    <a
+                      href={`tel:${branch.phone2}`}
+                      className="flex items-center gap-2 font-bengali text-stone-700 hover:text-primary-700 transition-colors"
+                    >
+                      <Phone className="w-4 h-4 text-stone-400" />
+                      {branch.phone2}
+                    </a>
+                  )}
+                  <a
+                    href={mapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-secondary-600 hover:text-secondary-700 font-bengali text-sm font-medium mt-2"
+                  >
+                    <MapPin className="w-4 h-4" />
+                    গুগল ম্যাপে দেখুন
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Hours + CTA */}
