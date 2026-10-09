@@ -74,7 +74,7 @@ export default function HomeHighlights({ onNavigate }: HomeHighlightsProps) {
               <Boxes className="w-9 h-9 text-primary-200 flex-shrink-0" />
             </div>
             <p className="font-bengali text-primary-100 leading-relaxed mb-6">
-              দিনাজপুর, নওগাঁ, কুষ্টিয়া ও চাপাইনবাবগঞ্জের মিল এবং মোকাম থেকে বাছাই করা চাল আমাদের আড়তে আসে।
+              দিনাজপুর, নওগাঁ, কুষ্টিয়া, বগুড়া, রাজশাহী, চাপাইনবাবগঞ্জ, টাঙ্গাইল, নেত্রকোনা, ব্রাহ্মণবাড়িয়া ও জামালপুরের মিল এবং মোকাম থেকে বাছাই করা চাল আমাদের আড়তে আসে।
             </p>
             <div className="flex flex-wrap gap-2">
               {sourcingRegions.map((region) => (
