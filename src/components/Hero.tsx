@@ -41,7 +41,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           {/* Subtitle */}
           <p className="font-bengali text-lg sm:text-xl text-stone-200 leading-relaxed mb-8 animate-fade-in-up animate-delay-200 text-pretty max-w-xl">
             দেশের শীর্ষস্থানীয় সকল ব্র্যান্ডের অরিজিনাল চাউল সরাসরি মিল রেটে পাইকারি সরবরাহ করা হয়।
-            দিনাজপুর, নওগাঁ, কুষ্টিয়া ও দেশের সেরা মিল ও ব্র্যান্ডের প্রিমিয়াম কোয়ালিটি চাউল।
+            দিনাজপুর, নওগাঁ, কুষ্টিয়া, বগুড়া, রাজশাহী, চাপাইনবাবগঞ্জ, টাঙ্গাইল, নেত্রকোনা, ব্রাহ্মণবাড়িয়া, জামালপুর ও দেশের সেরা মিল ও ব্র্যান্ডের প্রিমিয়াম কোয়ালিটি চাউল।
           </p>
 
           {/* CTA buttons */}
