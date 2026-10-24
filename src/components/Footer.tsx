@@ -68,7 +68,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li>
                 <a href="mailto:info@sonalitradersrice.com" className="flex items-center gap-2 hover:text-primary-400 transition-colors">
                   <Mail className="w-4 h-4 text-primary-500 shrink-0" />
-                  <span>sonalitradersrice@gmail.com</span>
+                  <span>info@sonalitradersrice.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-2">
