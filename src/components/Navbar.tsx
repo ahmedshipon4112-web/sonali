@@ -38,8 +38,8 @@ export default function Navbar({ currentRoute, onNavigate }: NavbarProps) {
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <p className="font-bengali">প্রসিদ্ধ চাউলের আড়ৎ — টঙ্গী, গাজীপুর</p>
           <div className="flex items-center gap-4">
-            <a href="mailto:sonalitradersrice@gmail.com" className="font-bengali hover:text-primary-200 transition-colors">
-              sonalitradersrice@gmail.com
+            <a href="mailto:info@sonalitradersrice.com" className="font-bengali hover:text-primary-200 transition-colors">
+              info@sonalitradersrice.com
             </a>
             <a
               href="tel:01320395462"
