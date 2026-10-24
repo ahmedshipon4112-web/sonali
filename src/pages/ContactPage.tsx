@@ -98,8 +98,8 @@ export default function ContactPage({ onNavigate }: ContactPageProps) {
               </div>
               <h3 className="font-bengali font-bold text-stone-800 mb-1">ইমেইল</h3>
               <p className="font-bengali text-stone-500 text-sm mb-2">বাণিজ্যিক প্রস্তাবের জন্য</p>
-              <a href="mailto:sonalitradersrice@gmail.com" className="font-bengali text-primary-700 text-sm break-all hover:text-primary-800 transition-colors">
-                sonalitradersrice@gmail.com
+              <a href="mailto:info@sonalitradersrice.com" className="font-bengali text-primary-700 text-sm break-all hover:text-primary-800 transition-colors">
+                info@sonalitradersrice.com
               </a>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100 text-center">
